@@ -1,6 +1,6 @@
 Name:		texlive-roboto
 Version:	64350
-Release:	1
+Release:	2
 Summary:	Support for the Roboto family of fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/roboto
