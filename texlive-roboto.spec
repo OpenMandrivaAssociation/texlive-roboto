@@ -3,7 +3,7 @@ Version:	64350
 Release:	2
 Summary:	Support for the Roboto family of fonts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/roboto
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/roboto
 License:	apache2 ofl lppl
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/roboto.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/roboto.doc.r%{version}.tar.xz
