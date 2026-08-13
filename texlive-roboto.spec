@@ -12,7 +12,8 @@ Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/roboto.r%{tl_rev
 Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/roboto.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-Provides:	texlive(%{tl_name}) = %{tl_revision}
+Requires:	texlive-tlpkg
+Provides:	texlive(%{tl_name}) = %{version}
 
 %description
 This package provides LaTeX, pdfLaTeX, XeLaTeX and LuaLaTeX support for
@@ -20,3 +21,10 @@ the Roboto Sans, Roboto Condensed, Roboto Mono, Roboto Slab and Roboto
 Serif families of fonts, designed by Christian Robertson and Greg
 Gazdowicz for Google.
 
+
+%install -a
+mkdir -p %{buildroot}%{_texmf_updmap_d}
+cat > %{buildroot}%{_texmf_updmap_d}/%{tl_name} <<'TL_DROPIN_EOF'
+# from roboto:
+Map roboto.map
+TL_DROPIN_EOF
